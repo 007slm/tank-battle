@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>超级坦克大战 (DOM 面向对象终极完整版)</title>
+  <link rel="stylesheet" href="../styles/game.css">
+  <style>
+    .top-controls {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 8px;
+      align-items: center;
+    }
+    select, button {
+      background: #181b2a;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #e6edf3;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    select:hover, button:hover {
+      border-color: #00f2fe;
+    }
+    .tip-bar {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 控制栏 -->
+  <div class="top-controls">
+    <select id="levelSelect">
+      <option value="0">第 1 关：平原突围</option>
+      <option value="1">第 2 关：水网封锁</option>
+      <option value="2">第 3 关：丛林迷踪</option>
+      <option value="3">第 4 关：钢铁要塞</option>
+      <option value="4">第 5 关：终极决战</option>
+    </select>
+
+    <label style="display: flex; align-items: center; gap: 6px; font-size: 0.9rem; cursor: pointer; color: #f1c40f;">
+      <input type="checkbox" id="twoPlayersToggle" style="cursor: pointer; width: 16px; height: 16px;">
+      <span>开启 2P 双人对战</span>
+    </label>
+
+    <button id="muteBtn">🔊 声音</button>
+    <a href="../index.html" style="color: #00f2fe; text-decoration: none; font-size: 0.9rem; font-weight: 600;">🏠 返回课程目录</a>
+  </div>
+
+  <!-- 战场屏幕 (600x440) -->
+  <div id="battlefield" class="battlefield"></div>
+
+  <!-- 操作提示 -->
+  <div class="tip-bar">
+    🟢 1P: <code>WASD</code> 移动 + <code>空格 / J</code> 开炮 &nbsp;|&nbsp; 🟡 2P: <code>方向键</code> 移动 + <code>Enter</code> 开炮
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

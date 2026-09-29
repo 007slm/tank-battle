@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>坦克大战 · 少儿 ES6 面向对象实战课</title>
+  <link rel="stylesheet" href="./styles/game.css">
+  <style>
+    body {
+      padding: 30px 20px;
+      height: auto;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+    h1 {
+      margin-bottom: 6px;
+      color: #00f2fe;
+      font-size: 2rem;
+    }
+    p.subtitle {
+      color: #8b949e;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+    .lesson-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 620px;
+    }
+    .lesson-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 18px;
+      background: #181b2a;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      text-decoration: none;
+      color: #e6edf3;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+    }
+    .lesson-item:hover {
+      border-color: #00f2fe;
+      background: rgba(0, 242, 254, 0.1);
+      transform: translateX(4px);
+    }
+    .lesson-num {
+      color: #00f2fe;
+      font-weight: 700;
+      margin-right: 10px;
+      font-family: monospace;
+    }
+    .lesson-item.final {
+      background: linear-gradient(135deg, rgba(241, 196, 15, 0.15), rgba(255, 71, 87, 0.15));
+      border-color: #f1c40f;
+    }
+    .lesson-item.final:hover {
+      border-color: #00f2fe;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 坦克大战少儿编程实战课</h1>
+  <p class="subtitle">基于 DOM + 图片面向对象架构 · 双击或本地服务即开即玩：</p>
+
+  <div class="lesson-list">
+    <a class="lesson-item" href="./lessons/lesson-01-draw-tank/index.html">
+      <div><span class="lesson-num">Lesson 01</span> 🎨 类与对象：在战场上创建战车</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-02-tank-move/index.html">
+      <div><span class="lesson-num">Lesson 02</span> 🕹️ 对象的方法：键盘控制战车移动</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-03-fire-bullet/index.html">
+      <div><span class="lesson-num">Lesson 03</span> 💥 对象的创建与销毁：发射子弹</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-04-grid-map/index.html">
+      <div><span class="lesson-num">Lesson 04</span> 🗺️ 二维数组：搭建网格瓦片战场</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-05-collision/index.html">
+      <div><span class="lesson-num">Lesson 05</span> 🧱 碰撞算法：阻挡障碍与炮轰碎砖</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-06-enemy-ai/index.html">
+      <div><span class="lesson-num">Lesson 06</span> 🤖 面向对象继承：敌人巡逻 AI</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-07-hp-explosion/index.html">
+      <div><span class="lesson-num">Lesson 07</span> 💥 生命值与爆炸：血条与伤害</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-08-base-defense/index.html">
+      <div><span class="lesson-num">Lesson 08</span> 🦅 基地保卫战：老鹰雕像与胜负规则</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-09-powerups/index.html">
+      <div><span class="lesson-num">Lesson 09</span> ⭐ 神秘宝箱：道具掉落与战车升级</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item" href="./lessons/lesson-10-retro-audio/index.html">
+      <div><span class="lesson-num">Lesson 10</span> 🎵 动感音效与复古街机 HUD 计分</div>
+      <span>➡️ 运行</span>
+    </a>
+    <a class="lesson-item final" href="./final-game/index.html">
+      <div><span class="lesson-num" style="color: #f1c40f;">FINAL</span> ⭐ 超级坦克大战：终极完整版 (5大关卡+双人模式)</div>
+      <span>🎮 畅玩</span>
+    </a>
+  </div>
+
+</body>
+</html>
